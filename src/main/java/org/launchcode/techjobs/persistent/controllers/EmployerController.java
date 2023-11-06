@@ -38,8 +38,8 @@ public class EmployerController {
             return "employers/add";
         } else {
             employerRepository.save(newEmployer);
+            return "redirect:";
         }
-        return "redirect:";
     }
 
     @GetMapping("view/{employerId}")
